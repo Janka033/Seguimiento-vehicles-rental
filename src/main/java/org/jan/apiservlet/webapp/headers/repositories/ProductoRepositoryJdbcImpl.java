@@ -1,5 +1,8 @@
 package org.jan.apiservlet.webapp.headers.repositories;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import org.jan.apiservlet.webapp.headers.mapping.ProductoMapper;
 import org.jan.apiservlet.webapp.headers.mapping.dto.ProductoDto;
 import org.jan.apiservlet.webapp.headers.models.Categoria;
@@ -9,13 +12,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@ApplicationScoped
 public class ProductoRepositoryJdbcImpl implements Repository<ProductoDto> {
+   @Inject
+   @Named("conn")
     private Connection conn;
-
-    public ProductoRepositoryJdbcImpl(Connection conn) {
-        this.conn = conn;
-    }
-
     @Override
     public List<ProductoDto> listar() throws SQLException {
         List<ProductoDto> productos = new ArrayList<>();

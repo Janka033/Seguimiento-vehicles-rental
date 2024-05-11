@@ -1,5 +1,7 @@
 package org.jan.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -15,10 +17,10 @@ import java.util.Optional;
 
 @WebServlet("/productos/eliminar")
 public class ProductoEliminarServlet extends HttpServlet {
+    @Inject
+    private ProductoService service;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Connection conn = (Connection) req.getAttribute("conn");
-        ProductoService service = new ProductoServiceJdbcImpl(conn);
         Long id;
         try {
             id = Long.valueOf(req.getParameter("id"));

@@ -1,22 +1,21 @@
 package org.jan.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import org.jan.apiservlet.webapp.headers.mapping.dto.UsuarioDto;
-import org.aguzman.apiservlet.webapp.headers.services.*;
 import org.jan.apiservlet.webapp.headers.services.LoginService;
 import org.jan.apiservlet.webapp.headers.services.LoginServiceSessionImpl;
 import org.jan.apiservlet.webapp.headers.services.UsuarioService;
-import org.jan.apiservlet.webapp.headers.services.UsuarioServiceImpl;
-
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 import java.util.Optional;
 
 @WebServlet({"/login", "/login.html"})
 public class LoginServlet extends HttpServlet {
+    @Inject
+    private UsuarioService service;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LoginService auth = new LoginServiceSessionImpl();
@@ -50,7 +49,6 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        UsuarioService service = new UsuarioServiceImpl((Connection) req.getAttribute("conn"));
         Optional<UsuarioDto> usuarioOptional = service.login(username,password);
 
         if (usuarioOptional.isPresent()) {

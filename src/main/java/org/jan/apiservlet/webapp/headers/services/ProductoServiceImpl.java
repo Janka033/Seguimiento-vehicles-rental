@@ -1,5 +1,6 @@
 package org.jan.apiservlet.webapp.headers.services;
 
+import jakarta.enterprise.inject.Alternative;
 import org.jan.apiservlet.webapp.headers.mapping.ProductoMapper;
 import org.jan.apiservlet.webapp.headers.mapping.dto.CategoriaDto;
 import org.jan.apiservlet.webapp.headers.mapping.dto.ProductoDto;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Alternative
 public class ProductoServiceImpl implements ProductoService{
     private static final List<Producto> producto = Arrays.asList(new Producto(1L, "notebook", "computacion", 175000),
             new Producto(2L, "Mesa escritorio", "Oficina", 100000),

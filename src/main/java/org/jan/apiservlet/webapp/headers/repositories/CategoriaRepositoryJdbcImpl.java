@@ -1,5 +1,8 @@
 package org.jan.apiservlet.webapp.headers.repositories;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import org.jan.apiservlet.webapp.headers.mapping.CategoriaMapper;
 import org.jan.apiservlet.webapp.headers.mapping.dto.CategoriaDto;
 import org.jan.apiservlet.webapp.headers.models.Categoria;
@@ -8,10 +11,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@ApplicationScoped
 public class CategoriaRepositoryJdbcImpl implements Repository<CategoriaDto>{
+
     private Connection conn;
 
-    public CategoriaRepositoryJdbcImpl(Connection conn) {
+    @Inject
+    public CategoriaRepositoryJdbcImpl(@Named("conn") Connection conn) {
         this.conn = conn;
     }
 
