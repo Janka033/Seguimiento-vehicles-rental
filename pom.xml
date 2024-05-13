@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.aguzman.apiservlet.webapp.session</groupId>
-    <artifactId>webapp-sessionn-vehiculos</artifactId>
+    <artifactId>webapp-sessionn-vehiculos-seguimiento</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <properties>
