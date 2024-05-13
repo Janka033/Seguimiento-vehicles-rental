@@ -54,20 +54,22 @@ public class ProductoRepositoryJdbcImpl implements Repository<ProductoDto> {
     public void guardar(ProductoDto productoDto) throws SQLException {
         String sql;
         if (productoDto.id() != null && productoDto.id() > 0) {
-            sql = "UPDATE productojdbc set nombre=?, precio=?, sku=?, id_categoria=? where id=?";
+            sql = "UPDATE productojdbc set tipo=?, marca=?, modelo=?, anio=?,id_categoria=?,precio=?, disponible=? where id=?";
         } else {
-            sql = "INSERT INTO productojdbc (nombre, precio,sku,id_categoria, fecha_registro) VALUES(?,?,?,?,?)";
+            sql = "INSERT INTO productojdbc (tipo, marca, modelo, anio,id_categoria,precio, disponible) VALUES(?,?,?,?,?,?,?)";
         }
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, productoDto.nombre());
-            stmt.setInt(2, productoDto.precio());
-            stmt.setString(3, productoDto.sku());
-            stmt.setLong(4, productoDto.categoria().getId());
+            stmt.setString(1, productoDto.tipo());
+            stmt.setString(2, productoDto.marca());
+            stmt.setString(3, productoDto.modelo());
+            stmt.setString(4, productoDto.anio());
+            stmt.setLong(5, productoDto.categoria().getId());
+            stmt.setInt(6,productoDto.precio());
+            stmt.setString(7, productoDto.disponible());
+
 
             if (productoDto.id() != null && productoDto.id() > 0) {
-                stmt.setLong(5, productoDto.id());
-            } else {
-                stmt.setDate(5, Date.valueOf(productoDto.fechaRegistro()));
+                stmt.setLong(8, productoDto.id());
             }
             stmt.executeUpdate();
         }
@@ -85,10 +87,12 @@ public class ProductoRepositoryJdbcImpl implements Repository<ProductoDto> {
     private static Producto getProducto(ResultSet rs) throws SQLException {
         Producto p = new Producto();
         p.setId(rs.getLong("id"));
-        p.setNombre(rs.getString("nombre"));
+        p.setTipo(rs.getString("tipo"));
+        p.setMarca(rs.getString("marca"));
+        p.setModelo(rs.getString("modelo"));
+        p.setAnio(rs.getString("anio"));
         p.setPrecio(rs.getInt("precio"));
-        p.setSku(rs.getString("sku"));
-        p.setFechaRegistro(rs.getDate("fecha_registro").toLocalDate());
+        p.setDisponible(rs.getString("disponible"));
         Categoria categoria = new Categoria();
         categoria.setId(rs.getLong("id_categoria"));
         categoria.setNombre(rs.getString("categoria"));

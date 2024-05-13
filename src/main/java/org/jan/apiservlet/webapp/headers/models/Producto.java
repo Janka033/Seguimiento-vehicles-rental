@@ -12,18 +12,24 @@ import java.time.LocalDate;
 @Builder
 public class Producto {
     private Long id;
-    private String nombre;
+    private String tipo;
+    private String marca;
+    private String modelo;
+    private String anio;
     private Categoria categoria;
     private int precio;
-    private String sku;
-    private LocalDate fechaRegistro;
+    private String disponible;
 
-    public Producto(Long id, String nombre, String tipo, int precio) {
+    public Producto(Long id,String tipoC, String tipo, String marca,String modelo, String anio, int precio, String disponible) {
         this.id = id;
-        this.nombre = nombre;
+        this.tipo = tipo;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
         Categoria categoria = new Categoria();
-        categoria.setNombre(tipo);
+        categoria.setNombre(tipoC);
         this.categoria = categoria;
         this.precio = precio;
+        this.disponible = disponible;
     }
 }

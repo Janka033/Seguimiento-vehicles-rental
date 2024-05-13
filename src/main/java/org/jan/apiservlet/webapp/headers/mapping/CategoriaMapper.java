@@ -11,7 +11,7 @@ public class CategoriaMapper {
     public static Producto mapFromDto(CategoriaDto categoriaDto) {
         return Producto.builder()
                 .id(categoriaDto.id())
-                .nombre(categoriaDto.nombre())
+                .modelo(categoriaDto.nombre())
                 .build();
     }
 }

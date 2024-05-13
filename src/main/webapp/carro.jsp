@@ -12,16 +12,24 @@
             <table class="table table-hover table-striped">
                 <tr>
                     <th>id</th>
-                    <th>nombre</th>
-                    <th>precio</th>
-                    <th>cantidad</th>
+                    <th>tipo</th>
+                    <th>marca</th>
+                    <th>modelo</th>
+                    <th>año</th>
+                    <th>categoría</th>
+                    <th>precio por dia</th>
+                    <th>Dias de uso</th>
                     <th>total</th>
                     <th>borrar</th>
                 </tr>
                 <c:forEach items="${carro.items}" var="item">
                     <tr>
                         <td>${item.producto.id}</td>
-                        <td>${item.producto.nombre}</td>
+                        <td>${item.producto.tipo}</td>
+                        <td>${item.producto.marca}</td>
+                        <td>${item.producto.modelo}</td>
+                        <td>${item.producto.anio}</td>
+                        <td>${item.producto.categoria.nombre}</td>
                         <td>${item.producto.precio}</td>
                         <td><input type="text" size="4" name="cant_${item.producto.id}" value="${item.cantidad}"/></td>
                         <td>${item.total}</td>

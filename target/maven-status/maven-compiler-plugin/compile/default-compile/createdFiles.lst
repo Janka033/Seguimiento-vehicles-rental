@@ -1,4 +1,3 @@
-org\jan\apiservlet\webapp\headers\controllers\ProductoFromServlet.class
 org\jan\apiservlet\webapp\headers\controllers\ProductoServlet.class
 org\jan\apiservlet\webapp\headers\configuraciones\ProducerResources.class
 org\jan\apiservlet\webapp\headers\util\ConexionBaseDatosPool.class
@@ -27,7 +26,6 @@ org\jan\apiservlet\webapp\headers\util\ConexionBaseDatosDS.class
 org\jan\apiservlet\webapp\headers\controllers\ActualizarCarrosServlet.class
 org\jan\apiservlet\webapp\headers\repositories\UsuarioRepositoryImpl.class
 org\jan\apiservlet\webapp\headers\services\ProductoService.class
-org\jan\apiservlet\webapp\headers\services\ProductoServiceImpl.class
 org\jan\apiservlet\webapp\headers\controllers\ProductoEliminarServlet.class
 org\jan\apiservlet\webapp\headers\controllers\AgregarCarroServlet.class
 org\jan\apiservlet\webapp\headers\models\Usuario$UsuarioBuilder.class

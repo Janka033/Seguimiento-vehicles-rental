@@ -22,7 +22,7 @@ public class ItemCarro {
             return false;
         ItemCarro itemCarro = (ItemCarro) object;
         return Objects.equals(producto.id(), itemCarro.producto.id()) &&
-                Objects.equals(producto.nombre(), itemCarro.producto.nombre());
+                Objects.equals(producto.modelo(), itemCarro.producto.modelo());
     }
     public int getTotal(){
         return cantidad * producto.precio();
