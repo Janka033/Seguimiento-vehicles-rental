@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="webapp-sessionn-vehiculos" />
-        <module name="webapp-sessionn" />
+        <module name="webapp-sessionn-vehiculos-seguimiento" />
       </profile>
     </annotationProcessing>
   </component>

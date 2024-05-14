@@ -16,7 +16,7 @@
       <input type="password" name="password" id="password" class="form-control">
     </div>
   </div>
-  <div class="row">  <div class="offset-sm-2 col-sm-10">  <input type="submit" value="Login" class="btn btn-primary">
+  <div class="row"> <div class="offset-sm-2 col-sm-10">  <input type="submit" value="Login" class="btn btn-primary">
   </div>
   </div>
 </form>

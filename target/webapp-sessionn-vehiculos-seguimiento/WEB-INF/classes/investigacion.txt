@@ -40,15 +40,15 @@ Esto significa que un objeto @RequestScoped se crea al inicio de una solicitud H
 Es útil para datos que deben estar disponibles solo durante la duración de una solicitud HTTP.
 
 @SessionScoped:
-Los objetos @SessionScoped viven a lo largo de la sesión del usuario.
-Se crean cuando el usuario inicia la sesión y se destruyen cuando la sesión termina.
-Es útil para mantener datos específicos del usuario durante su sesión en una aplicación web.
+Los objetos @SessionScoped viven a lo largo de la sesión del user.
+Se crean cuando el user inicia la sesión y se destruyen cuando la sesión termina.
+Es útil para mantener datos específicos del user durante su sesión en una aplicación web.
 
 @ConversationScoped:
-Este contexto es parte del estándar de CDI y se utiliza para objetos que deben sobrevivir durante una "conversación" de usuario,
+Este contexto es parte del estándar de CDI y se utiliza para objetos que deben sobrevivir durante una "conversación" de user,
 que puede abarcar múltiples solicitudes HTTP. Una conversación puede comenzar y terminar explícitamente o
 puede estar definida por el desarrollador. Esto es útil para manejar flujos de trabajo complejos que implican múltiples
-interacciones del usuario.
+interacciones del user.
 
 @ApplicationScoped:
 Los objetos @ApplicationScoped tienen una duración de vida que coincide con la de la aplicación.

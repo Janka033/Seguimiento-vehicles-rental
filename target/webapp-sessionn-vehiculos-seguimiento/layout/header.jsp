@@ -22,23 +22,13 @@
                     <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/productos">Productos</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/ver-carro">Ver carro (${carro.items.size()})</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/view-car">view car (${car.items.size()})</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cuenta
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="${pageContext.request.contextPath}/login">
-                            Login
-                        </a>
-                        <a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
-                            Logout
-                        </a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/form.jsp">filter vehicles</a>
                 </li>
             </ul>
 
