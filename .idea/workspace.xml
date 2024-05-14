@@ -4,252 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/AddCarServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ProductFromServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ProductUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ProductosFilterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ShowVehiclesServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/repositories/CategoryRepositoryJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/repositories/ProductRepositoryJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/repositories/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/configuraciones/ProducerResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/configuraciones/ProducerResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/ActualizarCarrosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/UpdateCarsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/controllers/VerCarroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/controllers/ViewCartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/filters/ConexionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/filters/ConexionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/filters/LoginFiltro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/filters/LoginFiltro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/listeners/ApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/listeners/ApplicationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/CategoriaMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/ProductoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/UsuarioMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/dto/CategoriaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/mapping/dto/CategoryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/dto/ProductoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/mapping/dto/UsuarioDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/models/Carro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/models/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/models/ItemCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/models/ItemCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/models/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/repositories/CategoriaRepositoryJdbcImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/repositories/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/LoginServiceCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/LoginServiceCookieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/LoginServiceSessionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/LoginServiceSessionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/ProductoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/ProductServiceJdbcImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/ServiceJdbcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/services/ServiceJdbcException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/UsuarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/services/UsuarioServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/util/DataBaseConnectionDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/util/DataBaseConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/investigacion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/investigacion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/carro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/car.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investigacion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investigacion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/configuraciones/ProducerResources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/ActualizarCarrosServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/listeners/ApplicationListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/CategoriaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/ProductoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/UsuarioMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/dto/CategoriaDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/dto/ProductoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/mapping/dto/UsuarioDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro$ItemCarroBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Producto$ProductoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Usuario$UsuarioBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/repositories/CategoriaRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/repositories/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/investigacion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/investigacion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/configuraciones/ProducerResources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ActualizarCarrosServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/listeners/ApplicationListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/CategoriaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/ProductoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/UsuarioMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/CategoriaDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/ProductoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/UsuarioDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro$ItemCarroBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Producto$ProductoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Usuario$UsuarioBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/CategoriaRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/WEB-INF/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/carro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/listar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos-seguimiento/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/investigacion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/configuraciones/ProducerResources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ActualizarCarrosServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/listeners/ApplicationListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/CategoriaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/ProductoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/UsuarioMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/CategoriaDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/ProductoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/mapping/dto/UsuarioDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro$ItemCarroBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Producto$ProductoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Usuario$UsuarioBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/CategoriaRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/classes/org/jan/apiservlet/webapp/headers/util/ConexionBaseDatosPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/byte-buddy-1.14.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/commons-dbcp2-2.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/commons-pool2-2.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jackson-annotations-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jackson-core-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jackson-databind-2.17.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.activation-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.enterprise.cdi-api-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.inject-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.servlet-api-5.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jboss-classfilewriter-1.2.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-api-4.0.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-core-impl-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-environment-common-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-jsf-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-probe-core-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-servlet-core-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-spi-4.0.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/lib/weld-web-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/carro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/layout/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/layout/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/listar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-sessionn-vehiculos/login.jsp" beforeDir="false" />
-    </list>
-    <list id="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" name="Changes by Asus" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jan/apiservlet/webapp/headers/filters/ConexionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/filters/ConexionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/carro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/car.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" name="Changes" comment="" />
+    <list id="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" name="Changes by Asus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,34 +22,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/webapp/car.jsp">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="10" end1="11" start2="10" end2="11" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="14" end1="19" start2="14" end2="19" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="24" end1="25" start2="24" end2="25" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="26" end1="34" start2="26" end2="34" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="35" end1="36" start2="35" end2="36" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="40" end1="41" start2="40" end2="41" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="43" end1="44" start2="43" end2="44" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="48" end1="50" start2="48" end2="50" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/co/edu/cue/proyectoc2/filters/ConexionFilter.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="7" end1="9" start2="7" end2="8" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="10" end1="11" start2="9" end2="9" changelist="2a1c9abd-3fb8-4027-a8a2-f7744b366e62" />
-        <range start1="15" end1="16" start2="13" end2="16" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="18" end1="18" start2="18" end2="19" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="21" end1="21" start2="22" end2="32" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="23" end1="25" start2="34" end2="34" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="26" end1="27" start2="35" end2="35" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-        <range start1="38" end1="39" start2="46" end2="46" changelist="cfdbc83e-b2ae-47d6-b145-90fa4629c0e2" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -303,24 +31,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.tomcat7:.executor": "Run",
-    "Maven.webapp-sessionn-vehiculos-seguimiento [clean].executor": "Run",
-    "Maven.webapp-sessionn-vehiculos-seguimiento [tomcat7:redeploy].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feat/ramb",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/janca/Documents/JakartaEE/webapp-sessionn - vehiculos-seguimiento",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.tomcat7:.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.webapp-sessionn-vehiculos-seguimiento [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.webapp-sessionn-vehiculos-seguimiento [tomcat7:redeploy].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/ramb&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/janca/Documents/JakartaEE/webapp-sessionn - vehiculos-seguimiento&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="tomcat7:" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -370,7 +98,7 @@
       <updated>1715638197019</updated>
       <workItem from="1715638197262" duration="23368000" />
       <workItem from="1715663580261" duration="29000" />
-      <workItem from="1715663817904" duration="790000" />
+      <workItem from="1715663817904" duration="2696000" />
     </task>
     <servers />
   </component>
