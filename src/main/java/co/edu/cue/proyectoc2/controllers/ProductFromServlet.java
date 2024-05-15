@@ -3,7 +3,7 @@ package co.edu.cue.proyectoc2.controllers;
 import co.edu.cue.proyectoc2.mapping.UserMapper;
 import co.edu.cue.proyectoc2.mapping.dto.UserDto;
 import co.edu.cue.proyectoc2.models.User;
-import co.edu.cue.proyectoc2.services.ProductService;
+import co.edu.cue.proyectoc2.repositories.Repository;
 import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -26,7 +27,7 @@ public class ProductFromServlet extends HttpServlet {
 
     /** Servicio para operaciones relacionadas con productos */
     @Inject
-    private ProductService service;
+    private Repository<UserDto> service;
 
     /**
      * Método GET para manejar solicitudes de visualización del formulario de productos.
@@ -47,7 +48,12 @@ public class ProductFromServlet extends HttpServlet {
         }
         User user = new User();
         if (id > 0) {
-            Optional<UserDto> o = service.porIdUser(id);
+            Optional<UserDto> o = null;
+            try {
+                o = Optional.ofNullable(service.porId(id));
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
             if (o.isPresent())
                 user = UserMapper.mapFromDto(o.get());
         }
@@ -96,7 +102,11 @@ public class ProductFromServlet extends HttpServlet {
         user.setPassword(password);
 
         if (mistakes.isEmpty()) {
-            service.saveUser(UserMapper.mapFrom(user));
+            try {
+                service.save(UserMapper.mapFrom(user));
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
             resp.sendRedirect(req.getContextPath() + "/users");
         } else {
             req.setAttribute("mistakes", mistakes);

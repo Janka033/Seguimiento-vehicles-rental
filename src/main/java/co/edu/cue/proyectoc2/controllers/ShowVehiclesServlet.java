@@ -1,6 +1,6 @@
 package co.edu.cue.proyectoc2.controllers;
 import co.edu.cue.proyectoc2.mapping.dto.ProductDto;
-import co.edu.cue.proyectoc2.services.ProductService;
+import co.edu.cue.proyectoc2.repositories.Repository;
 import jakarta.inject.Inject;
 
 import jakarta.servlet.ServletException;
@@ -11,8 +11,8 @@ import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
-import java.sql.SQLException;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Objects;
 @WebServlet({"/showVehicles", "/showVehicles.html"})
@@ -20,7 +20,7 @@ public class ShowVehiclesServlet extends HttpServlet{
 
 
         @Inject
-        private ProductService vehicleDtoService;
+        private Repository<ProductDto> vehicleDtoService;
         /**
          * Handles GET requests to display a list of vehicles based on filter criteria.
          * @param req  The HttpServletRequest object containing the request from the client.
@@ -51,7 +51,12 @@ public class ShowVehiclesServlet extends HttpServlet{
                 maxPrice = new BigDecimal(maxPriceReq);
             }
 
-            List<ProductDto> vehicleDtos = vehicleDtoService.listarProduct();
+            List<ProductDto> vehicleDtos = null;
+            try {
+                vehicleDtos = vehicleDtoService.listar();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
 
 
             BigDecimal finalMaxPrice = maxPrice;

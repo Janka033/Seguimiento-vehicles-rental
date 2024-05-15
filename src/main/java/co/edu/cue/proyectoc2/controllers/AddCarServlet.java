@@ -1,5 +1,6 @@
 package co.edu.cue.proyectoc2.controllers;
 
+import co.edu.cue.proyectoc2.repositories.Repository;
 import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -9,9 +10,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import co.edu.cue.proyectoc2.mapping.dto.ProductDto;
 import co.edu.cue.proyectoc2.models.Car;
 import co.edu.cue.proyectoc2.models.ItemCar;
-import co.edu.cue.proyectoc2.services.ProductService;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Optional;
 
 /**
@@ -31,7 +32,7 @@ public class AddCarServlet extends HttpServlet {
 
     /** Servicio para operaciones relacionadas con productos */
     @Inject
-    private ProductService service;
+    private Repository<ProductDto> service;
 
     /**
      * Método GET para manejar solicitudes de agregar un producto al carrito.
@@ -47,7 +48,12 @@ public class AddCarServlet extends HttpServlet {
         Long id = Long.parseLong(req.getParameter("id"));
 
         // Buscar el producto por su ID en el servicio
-        Optional<ProductDto> product = service.porIdProduct(id);
+        Optional<ProductDto> product ;
+        try {
+            product = Optional.ofNullable(service.porId(id));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
         // Si el producto está presente, agregarlo al carrito
         if (product.isPresent()) {

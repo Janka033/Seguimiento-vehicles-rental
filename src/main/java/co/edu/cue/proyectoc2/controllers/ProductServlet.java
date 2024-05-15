@@ -1,5 +1,6 @@
 package co.edu.cue.proyectoc2.controllers;
 
+import co.edu.cue.proyectoc2.repositories.Repository;
 import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -9,8 +10,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import co.edu.cue.proyectoc2.mapping.dto.ProductDto;
 import co.edu.cue.proyectoc2.services.LoginService;
 import co.edu.cue.proyectoc2.services.LoginServiceSessionImpl;
-import co.edu.cue.proyectoc2.services.ProductService;
+
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +26,7 @@ public class ProductServlet extends HttpServlet {
 
     /** Servicio para operaciones relacionadas con productos */
     @Inject
-    private ProductService service;
+    private Repository<ProductDto> service;
 
     /**
      * Método GET para manejar solicitudes de visualización del listado de productos.
@@ -38,7 +40,12 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         // Obtener la lista de productos
-        List<ProductDto> products = service.listarProduct();
+        List<ProductDto> products = null;
+        try {
+            products = service.listar();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
         // Verificar si hay un usuario autenticado
         LoginService auth = new LoginServiceSessionImpl();
@@ -47,7 +54,7 @@ public class ProductServlet extends HttpServlet {
         // Establecer atributos y enviar la solicitud al JSP correspondiente para mostrar el listado de productos
         req.setAttribute("productos",products);
         req.setAttribute("username",usernameOptional);
-        req.setAttribute("title",req.getAttribute("title") + ": Listado de productos");
+        req.setAttribute("title",req.getAttribute("title") + ": List of products");
         getServletContext().getRequestDispatcher("/list.jsp").forward(req,resp);
     }
 }
